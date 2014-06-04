@@ -147,7 +147,7 @@ public class FullscreenActivity extends Activity implements SensorEventListener 
     protected void onResume() {
         super.onResume();
         mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
-        mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_GAME);
+        mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_FASTEST);
     }
 
     @Override
